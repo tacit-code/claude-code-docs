@@ -141,8 +141,8 @@
     "quickstart.md": {
       "original_url": "https://docs.anthropic.com/en/docs/claude-code/quickstart",
       "original_md_url": "https://docs.anthropic.com/en/docs/claude-code/quickstart.md",
-      "hash": "1ee649b487f11735e612f8de06d26a42f3c58402509da865e641b69d4228ab96",
-      "last_updated": "2025-08-26T21:01:32.912138"
+      "hash": "f8db0dce0cbcf48465eafde2bcd7b43d767c886faed7717e304cdff356a937e6",
+      "last_updated": "2025-09-04T12:02:30.631376"
     },
     "sdk__sdk-headless.md": {
       "original_url": "https://docs.anthropic.com/en/docs/claude-code/sdk/sdk-headless",
@@ -231,8 +231,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-09-04T09:01:51.292425",
-    "fetch_duration_seconds": 21.669881,
+    "last_fetch_completed": "2025-09-04T12:02:37.841032",
+    "fetch_duration_seconds": 23.106342,
     "total_pages_discovered": 37,
     "pages_fetched_successfully": 38,
     "pages_failed": 0,
@@ -242,7 +242,7 @@
     "total_files": 38,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-09-04T09:01:51.292454",
+  "last_updated": "2025-09-04T12:02:37.841059",
   "base_url": "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/docs/",
   "github_repository": "ericbuess/claude-code-docs",
   "github_ref": "main",
