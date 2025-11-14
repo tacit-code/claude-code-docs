@@ -8,6 +8,43 @@
 
 # Changelog
 
+## 2.0.41
+
+- Added `model` parameter to prompt-based stop hooks, allowing users to specify a custom model for hook evaluation
+- Fixed slash commands from user settings being loaded twice, which could cause rendering issues
+- Fixed incorrect labeling of user settings vs project settings in command descriptions
+- Fixed crash when plugin command hooks timeout during execution
+- Fixed: Bedrock users no longer see duplicate Opus entries in the /model picker when using `--model haiku`
+- Fixed broken security documentation links in trust dialogs and onboarding
+- Fixed issue where pressing ESC to close the diff modal would also interrupt the model
+- Slash Commmands: Added CLAUDE_PROJECT_DIR and CLAUDE_PLUGIN_ROOT env vars to bash command processing
+- ctrl-r history search landing on a slash command no longer cancels the search
+- SDK: Support custom timeouts for hooks
+- Allow more safe git commands to run without approval
+- Plugins: Added support for sharing and installing output styles
+- Teleporting a session from web will automatically set the upstream branch
+
+## 2.0.37
+
+- Fixed how idleness is computed for notifications
+- Hooks: Added matcher values for Notification hook events
+- Output Styles: Added `keep-coding-instructions` option to frontmatter
+
+## 2.0.36
+
+- Fixed: DISABLE_AUTOUPDATER environment variable now properly disables package manager update notifications
+- Fixed queued messages being incorrectly executed as bash commands
+- Fixed input being lost when typing while a queued message is processed
+
+## 2.0.35
+
+- Improve fuzzy search results when searching commands
+- Improved VS Code extension to respect `chat.fontSize` and `chat.fontFamily` settings throughout the entire UI, and apply font changes immediately without requiring reload
+- Added `CLAUDE_CODE_EXIT_AFTER_STOP_DELAY` environment variable to automatically exit SDK mode after a specified idle duration, useful for automated workflows and scripts
+- Migrated `ignorePatterns` from project config to deny permissions in the localSettings.
+- Fixed messages returning null `stop_reason` and `stop_sequence` values
+- Fixed menu navigation getting stuck on items with empty string or other falsy values (e.g., in the `/hooks` menu)
+
 ## 2.0.34
 
 - VSCode Extension: Added setting to configure the initial permission mode for new conversations

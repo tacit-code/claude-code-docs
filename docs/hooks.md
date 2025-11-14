@@ -49,7 +49,7 @@ Hooks are organized by matchers, where each matcher can have multiple hooks:
   * `prompt`: (For `type: "prompt"`) The prompt to send to the LLM for evaluation
   * `timeout`: (Optional) How long a hook should run, in seconds, before canceling that specific hook
 
-For events like `UserPromptSubmit`, `Notification`, `Stop`, and `SubagentStop`
+For events like `UserPromptSubmit`, `Stop`, and `SubagentStop`
 that don't use matchers, you can omit the matcher field:
 
 ```json  theme={null}
@@ -289,6 +289,15 @@ Runs after Claude creates tool parameters and before processing the tool call.
 * `Write` - File writing
 * `WebFetch`, `WebSearch` - Web operations
 
+Use [PreToolUse decision control](#pretooluse-decision-control) to allow, deny, or ask for permission to use the tool.
+
+### PermissionRequest
+
+Runs when the user is shown a permission dialog.
+Use [PermissionRequest decision control](#permissionrequest-decision-control) to allow or deny on behalf of the user.
+
+Recognizes the same matcher values as PreToolUse.
+
 ### PostToolUse
 
 Runs immediately after a tool completes successfully.
@@ -297,12 +306,45 @@ Recognizes the same matcher values as PreToolUse.
 
 ### Notification
 
-Runs when Claude Code sends notifications. Notifications are sent when:
+Runs when Claude Code sends notifications. Supports matchers to filter by notification type.
 
-1. Claude needs your permission to use a tool. Example: "Claude needs your
-   permission to use Bash"
-2. The prompt input has been idle for at least 60 seconds. "Claude is waiting
-   for your input"
+**Common matchers:**
+
+* `permission_prompt` - Permission requests from Claude Code
+* `idle_prompt` - When Claude is waiting for user input (after 60+ seconds of idle time)
+* `auth_success` - Authentication success notifications
+* `elicitation_dialog` - When Claude Code needs input for MCP tool elicitation
+
+You can use matchers to run different hooks for different notification types, or omit the matcher to run hooks for all notifications.
+
+**Example: Different notifications for different types**
+
+```json  theme={null}
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/path/to/permission-alert.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/path/to/idle-notification.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
 
 ### UserPromptSubmit
 
@@ -468,7 +510,8 @@ The exact schema for `tool_input` and `tool_response` depends on the tool.
   "cwd": "/Users/...",
   "permission_mode": "default",
   "hook_event_name": "Notification",
-  "message": "Task completed successfully"
+  "message": "Claude needs your permission to use Bash",
+  "notification_type": "permission_prompt"
 }
 ```
 
@@ -625,7 +668,7 @@ to Claude.
 
 Additionally, hooks can modify tool inputs before execution using `updatedInput`:
 
-* `updatedInput` allows you to modify the tool's input parameters before the tool executes. This is a `Record<string, unknown>` object containing the fields you want to change or add.
+* `updatedInput` allows you to modify the tool's input parameters before the tool executes.
 * This is most useful with `"permissionDecision": "allow"` to modify and approve tool calls.
 
 ```json  theme={null}
@@ -647,6 +690,27 @@ Additionally, hooks can modify tool inputs before execution using `updatedInput`
   `hookSpecificOutput.permissionDecisionReason` instead. The deprecated fields
   `"approve"` and `"block"` map to `"allow"` and `"deny"` respectively.
 </Note>
+
+#### `PermissionRequest` Decision Control
+
+`PermissionRequest` hooks can allow or deny permission requests shown to the user.
+
+* For `"behavior": "allow"` you can also optionally pass in an `"updatedInput"` that modifies the tool's input parameters before the tool executes.
+* For `"behavior": "deny"` you can also optionally pass in a `"message"` string that tells the model why the permission was denied, and a boolean `"interrupt"` which will stop Claude.
+
+```json  theme={null}
+{
+  "hookSpecificOutput": {
+    "hookEventName": "PermissionRequest",
+    "decision": {
+      "behavior": "allow",
+      "updatedInput": {
+        "command": "npm run lint"
+      }
+    }
+  }
+}
+```
 
 #### `PostToolUse` Decision Control
 
