@@ -97,6 +97,21 @@ The changelog feature fetches the latest release notes directly from the officia
 /docs uninstall    # Get commnd to remove claude-code-docs completely
 ```
 
+### Customize command name
+
+If you prefer a different command name (e.g., `/claude-docs` instead of `/docs`), you can easily customize it:
+
+```bash
+# Rename the command file
+mv ~/.claude/commands/docs.md ~/.claude/commands/claude-docs.md
+
+# Now use /claude-docs instead of /docs
+/claude-docs hooks
+/claude-docs mcp
+```
+
+You can use any name you prefer: `/cdocs`, `/claude-code-docs`, etc. The command file name determines the slash command.
+
 ### Creative usage examples
 ```bash
 # Natural language queries work great
