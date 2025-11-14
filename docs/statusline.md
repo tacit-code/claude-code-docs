@@ -12,7 +12,7 @@ You can either:
 
 * Directly add a `statusLine` command to your `.claude/settings.json`:
 
-```json
+```json  theme={null}
 {
   "statusLine": {
     "type": "command",
@@ -34,7 +34,7 @@ You can either:
 
 Your status line command receives structured data via stdin in JSON format:
 
-```json
+```json  theme={null}
 {
   "hook_event_name": "Status",
   "session_id": "abc123...",
@@ -47,6 +47,17 @@ Your status line command receives structured data via stdin in JSON format:
   "workspace": {
     "current_dir": "/current/working/directory",
     "project_dir": "/original/project/directory"
+  },
+  "version": "1.0.80",
+  "output_style": {
+    "name": "default"
+  },
+  "cost": {
+    "total_cost_usd": 0.01234,
+    "total_duration_ms": 45000,
+    "total_api_duration_ms": 2300,
+    "total_lines_added": 156,
+    "total_lines_removed": 23
   }
 }
 ```
@@ -55,7 +66,7 @@ Your status line command receives structured data via stdin in JSON format:
 
 ### Simple Status Line
 
-```bash
+```bash  theme={null}
 #!/bin/bash
 # Read JSON input from stdin
 input=$(cat)
@@ -69,7 +80,7 @@ echo "[$MODEL_DISPLAY] 📁 ${CURRENT_DIR##*/}"
 
 ### Git-Aware Status Line
 
-```bash
+```bash  theme={null}
 #!/bin/bash
 # Read JSON input from stdin
 input=$(cat)
@@ -92,7 +103,7 @@ echo "[$MODEL_DISPLAY] 📁 ${CURRENT_DIR##*/}$GIT_BRANCH"
 
 ### Python Example
 
-```python
+```python  theme={null}
 #!/usr/bin/env python3
 import json
 import sys
@@ -121,7 +132,7 @@ print(f"[{model}] 📁 {current_dir}{git_branch}")
 
 ### Node.js Example
 
-```javascript
+```javascript  theme={null}
 #!/usr/bin/env node
 
 const fs = require('fs');
@@ -156,7 +167,7 @@ process.stdin.on('end', () => {
 
 For more complex bash scripts, you can create helper functions:
 
-```bash
+```bash  theme={null}
 #!/bin/bash
 # Read JSON input once
 input=$(cat)
@@ -166,6 +177,10 @@ get_model_name() { echo "$input" | jq -r '.model.display_name'; }
 get_current_dir() { echo "$input" | jq -r '.workspace.current_dir'; }
 get_project_dir() { echo "$input" | jq -r '.workspace.project_dir'; }
 get_version() { echo "$input" | jq -r '.version'; }
+get_cost() { echo "$input" | jq -r '.cost.total_cost_usd'; }
+get_duration() { echo "$input" | jq -r '.cost.total_duration_ms'; }
+get_lines_added() { echo "$input" | jq -r '.cost.total_lines_added'; }
+get_lines_removed() { echo "$input" | jq -r '.cost.total_lines_removed'; }
 
 # Use the helpers
 MODEL=$(get_model_name)

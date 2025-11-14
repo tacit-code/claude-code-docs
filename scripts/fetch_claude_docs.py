@@ -27,8 +27,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Sitemap URLs to try (in order of preference)
+# NOTE: Anthropic moved docs from docs.anthropic.com to code.claude.com
 SITEMAP_URLS = [
-    "https://docs.anthropic.com/sitemap.xml",
+    "https://code.claude.com/docs/sitemap.xml",
+    "https://docs.anthropic.com/sitemap.xml",  # Legacy fallback
     "https://docs.anthropic.com/sitemap_index.xml",
     "https://anthropic.com/sitemap.xml"
 ]
@@ -95,8 +97,10 @@ def save_manifest(docs_dir: Path, manifest: dict) -> None:
 
 def url_to_safe_filename(url_path: str) -> str:
     """Convert a URL path to a safe filename that preserves hierarchy only when needed."""
-    # Remove any known prefix patterns
-    for prefix in ['/en/docs/claude-code/', '/docs/claude-code/', '/claude-code/']:
+    # Remove any known prefix patterns (support both old and new structures)
+    # Old: /en/docs/claude-code/hooks -> hooks
+    # New: /docs/en/hooks -> hooks
+    for prefix in ['/docs/en/', '/en/docs/claude-code/', '/docs/claude-code/', '/claude-code/']:
         if prefix in url_path:
             path = url_path.split(prefix)[-1]
             break
@@ -211,10 +215,12 @@ def discover_claude_code_pages(session: requests.Session, sitemap_url: str) -> L
         
         # Filter for ENGLISH Claude Code documentation pages only
         claude_code_pages = []
-        
+
         # Only accept English documentation patterns
+        # NOTE: URL structure changed from /en/docs/claude-code/ to /docs/en/
         english_patterns = [
-            '/en/docs/claude-code/',
+            '/docs/en/',  # New structure (code.claude.com)
+            '/en/docs/claude-code/',  # Legacy structure (docs.anthropic.com)
         ]
         
         for url in urls:
@@ -251,24 +257,25 @@ def discover_claude_code_pages(session: requests.Session, sitemap_url: str) -> L
     except Exception as e:
         logger.error(f"Failed to discover pages from sitemap: {e}")
         logger.warning("Falling back to essential pages...")
-        
-        # More comprehensive fallback list
+
+        # More comprehensive fallback list (updated for new URL structure)
+        # NOTE: Changed from /en/docs/claude-code/ to /docs/en/
         return [
-            "/en/docs/claude-code/overview",
-            "/en/docs/claude-code/setup",
-            "/en/docs/claude-code/quickstart",
-            "/en/docs/claude-code/memory",
-            "/en/docs/claude-code/common-workflows",
-            "/en/docs/claude-code/ide-integrations",
-            "/en/docs/claude-code/mcp",
-            "/en/docs/claude-code/github-actions",
-            "/en/docs/claude-code/sdk",
-            "/en/docs/claude-code/troubleshooting",
-            "/en/docs/claude-code/security",
-            "/en/docs/claude-code/settings",
-            "/en/docs/claude-code/hooks",
-            "/en/docs/claude-code/costs",
-            "/en/docs/claude-code/monitoring-usage",
+            "/docs/en/overview",
+            "/docs/en/setup",
+            "/docs/en/quickstart",
+            "/docs/en/memory",
+            "/docs/en/common-workflows",
+            "/docs/en/ide-integrations",
+            "/docs/en/mcp",
+            "/docs/en/github-actions",
+            "/docs/en/sdk",
+            "/docs/en/troubleshooting",
+            "/docs/en/security",
+            "/docs/en/settings",
+            "/docs/en/hooks",
+            "/docs/en/costs",
+            "/docs/en/monitoring-usage",
         ]
 
 
@@ -504,23 +511,24 @@ def main():
         if sitemap_url:
             documentation_pages = discover_claude_code_pages(session, sitemap_url)
         else:
-            # Use fallback pages if sitemap discovery failed
+            # Use fallback pages if sitemap discovery failed (updated for new URL structure)
+            # NOTE: Changed from /en/docs/claude-code/ to /docs/en/
             documentation_pages = [
-                "/en/docs/claude-code/overview",
-                "/en/docs/claude-code/setup",
-                "/en/docs/claude-code/quickstart",
-                "/en/docs/claude-code/memory",
-                "/en/docs/claude-code/common-workflows",
-                "/en/docs/claude-code/ide-integrations",
-                "/en/docs/claude-code/mcp",
-                "/en/docs/claude-code/github-actions",
-                "/en/docs/claude-code/sdk",
-                "/en/docs/claude-code/troubleshooting",
-                "/en/docs/claude-code/security",
-                "/en/docs/claude-code/settings",
-                "/en/docs/claude-code/hooks",
-                "/en/docs/claude-code/costs",
-                "/en/docs/claude-code/monitoring-usage",
+                "/docs/en/overview",
+                "/docs/en/setup",
+                "/docs/en/quickstart",
+                "/docs/en/memory",
+                "/docs/en/common-workflows",
+                "/docs/en/ide-integrations",
+                "/docs/en/mcp",
+                "/docs/en/github-actions",
+                "/docs/en/sdk",
+                "/docs/en/troubleshooting",
+                "/docs/en/security",
+                "/docs/en/settings",
+                "/docs/en/hooks",
+                "/docs/en/costs",
+                "/docs/en/monitoring-usage",
             ]
         
         if not documentation_pages:

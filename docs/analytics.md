@@ -5,12 +5,12 @@
 Claude Code provides an analytics dashboard that helps organizations understand developer usage patterns, track productivity metrics, and optimize their Claude Code adoption.
 
 <Note>
-  Analytics are currently available only for organizations using Claude Code with the Anthropic API through the Anthropic Console.
+  Analytics are currently available only for organizations using Claude Code with the Claude API through the Claude Console.
 </Note>
 
 ## Access analytics
 
-Navigate to the analytics dashboard at [console.anthropic.com/claude\_code](https://console.anthropic.com/claude_code).
+Navigate to the analytics dashboard at [console.anthropic.com/claude-code](https://console.anthropic.com/claude-code).
 
 ### Required roles
 
@@ -38,7 +38,6 @@ Total lines of code written by Claude Code that users have accepted in their ses
 Percentage of times users accept code editing tool usage, including:
 
 * Edit
-* MultiEdit
 * Write
 * NotebookEdit
 
@@ -84,5 +83,5 @@ Tool acceptance rates and code metrics help you:
 
 ## Related resources
 
-* [Monitoring usage with OpenTelemetry](/en/docs/claude-code/monitoring-usage) for custom metrics and alerting
-* [Identity and access management](/en/docs/claude-code/iam) for role configuration
+* [Monitoring usage with OpenTelemetry](/en/monitoring-usage) for custom metrics and alerting
+* [Identity and access management](/en/iam) for role configuration

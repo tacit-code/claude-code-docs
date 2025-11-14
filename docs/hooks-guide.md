@@ -8,7 +8,7 @@ Code's behavior, ensuring certain actions always happen rather than relying on
 the LLM to choose to run them.
 
 <Tip>
-  For reference documentation on hooks, see [Hooks reference](/en/docs/claude-code/hooks).
+  For reference documentation on hooks, see [Hooks reference](/en/hooks).
 </Tip>
 
 Example use cases for hooks include:
@@ -31,7 +31,7 @@ suggestions into app-level code that executes every time it is expected to run.
   You must consider the security implication of hooks as you add them, because hooks run automatically during the agent loop with your current environment's credentials.
   For example, malicious hooks code can exfiltrate your data. Always review your hooks implementation before registering them.
 
-  For full security best practices, see [Security Considerations](/en/docs/claude-code/hooks#security-considerations) in the hooks reference documentation.
+  For full security best practices, see [Security Considerations](/en/hooks#security-considerations) in the hooks reference documentation.
 </Warning>
 
 ## Hook Events Overview
@@ -44,9 +44,10 @@ workflow:
 * **UserPromptSubmit**: Runs when the user submits a prompt, before Claude processes it
 * **Notification**: Runs when Claude Code sends notifications
 * **Stop**: Runs when Claude Code finishes responding
-* **Subagent Stop**: Runs when subagent tasks complete
+* **SubagentStop**: Runs when subagent tasks complete
 * **PreCompact**: Runs before Claude Code is about to run a compact operation
 * **SessionStart**: Runs when Claude Code starts a new session or resumes an existing session
+* **SessionEnd**: Runs when Claude Code session ends
 
 Each event receives different data and can control Claude's behavior in
 different ways.
@@ -62,7 +63,7 @@ Install `jq` for JSON processing in the command line.
 
 ### Step 1: Open hooks configuration
 
-Run the `/hooks` [slash command](/en/docs/claude-code/slash-commands) and select
+Run the `/hooks` [slash command](/en/slash-commands) and select
 the `PreToolUse` hook event.
 
 `PreToolUse` hooks run before tool calls and can block them while providing
@@ -80,7 +81,7 @@ Type `Bash` for the matcher.
 
 Select `+ Add new hook…` and enter this command:
 
-```bash
+```bash  theme={null}
 jq -r '"\(.tool_input.command) - \(.tool_input.description // "No description")"' >> ~/.claude/bash-command-log.txt
 ```
 
@@ -96,7 +97,7 @@ Then press Esc until you return to the REPL. Your hook is now registered!
 
 Run `/hooks` again or check `~/.claude/settings.json` to see your configuration:
 
-```json
+```json  theme={null}
 {
   "hooks": {
     "PreToolUse": [
@@ -118,7 +119,7 @@ Run `/hooks` again or check `~/.claude/settings.json` to see your configuration:
 
 Ask Claude to run a simple command like `ls` and check your log file:
 
-```bash
+```bash  theme={null}
 cat ~/.claude/bash-command-log.txt
 ```
 
@@ -138,12 +139,12 @@ ls - Lists files and directories
 
 Automatically format TypeScript files after editing:
 
-```json
+```json  theme={null}
 {
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": "Edit|MultiEdit|Write",
+        "matcher": "Edit|Write",
         "hooks": [
           {
             "type": "command",
@@ -156,11 +157,134 @@ Automatically format TypeScript files after editing:
 }
 ```
 
+### Markdown Formatting Hook
+
+Automatically fix missing language tags and formatting issues in markdown files:
+
+```json  theme={null}
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/markdown_formatter.py"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Create `.claude/hooks/markdown_formatter.py` with this content:
+
+````python  theme={null}
+#!/usr/bin/env python3
+"""
+Markdown formatter for Claude Code output.
+Fixes missing language tags and spacing issues while preserving code content.
+"""
+import json
+import sys
+import re
+import os
+
+def detect_language(code):
+    """Best-effort language detection from code content."""
+    s = code.strip()
+    
+    # JSON detection
+    if re.search(r'^\s*[{\[]', s):
+        try:
+            json.loads(s)
+            return 'json'
+        except:
+            pass
+    
+    # Python detection
+    if re.search(r'^\s*def\s+\w+\s*\(', s, re.M) or \
+       re.search(r'^\s*(import|from)\s+\w+', s, re.M):
+        return 'python'
+    
+    # JavaScript detection  
+    if re.search(r'\b(function\s+\w+\s*\(|const\s+\w+\s*=)', s) or \
+       re.search(r'=>|console\.(log|error)', s):
+        return 'javascript'
+    
+    # Bash detection
+    if re.search(r'^#!.*\b(bash|sh)\b', s, re.M) or \
+       re.search(r'\b(if|then|fi|for|in|do|done)\b', s):
+        return 'bash'
+    
+    # SQL detection
+    if re.search(r'\b(SELECT|INSERT|UPDATE|DELETE|CREATE)\s+', s, re.I):
+        return 'sql'
+        
+    return 'text'
+
+def format_markdown(content):
+    """Format markdown content with language detection."""
+    # Fix unlabeled code fences
+    def add_lang_to_fence(match):
+        indent, info, body, closing = match.groups()
+        if not info.strip():
+            lang = detect_language(body)
+            return f"{indent}```{lang}\n{body}{closing}\n"
+        return match.group(0)
+    
+    fence_pattern = r'(?ms)^([ \t]{0,3})```([^\n]*)\n(.*?)(\n\1```)\s*$'
+    content = re.sub(fence_pattern, add_lang_to_fence, content)
+    
+    # Fix excessive blank lines (only outside code fences)
+    content = re.sub(r'\n{3,}', '\n\n', content)
+    
+    return content.rstrip() + '\n'
+
+# Main execution
+try:
+    input_data = json.load(sys.stdin)
+    file_path = input_data.get('tool_input', {}).get('file_path', '')
+    
+    if not file_path.endswith(('.md', '.mdx')):
+        sys.exit(0)  # Not a markdown file
+    
+    if os.path.exists(file_path):
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        formatted = format_markdown(content)
+        
+        if formatted != content:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(formatted)
+            print(f"✓ Fixed markdown formatting in {file_path}")
+    
+except Exception as e:
+    print(f"Error formatting markdown: {e}", file=sys.stderr)
+    sys.exit(1)
+````
+
+Make the script executable:
+
+```bash  theme={null}
+chmod +x .claude/hooks/markdown_formatter.py
+```
+
+This hook automatically:
+
+* Detects programming languages in unlabeled code blocks
+* Adds appropriate language tags for syntax highlighting
+* Fixes excessive blank lines while preserving code content
+* Only processes markdown files (`.md`, `.mdx`)
+
 ### Custom Notification Hook
 
 Get desktop notifications when Claude needs input:
 
-```json
+```json  theme={null}
 {
   "hooks": {
     "Notification": [
@@ -182,12 +306,12 @@ Get desktop notifications when Claude needs input:
 
 Block edits to sensitive files:
 
-```json
+```json  theme={null}
 {
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "Edit|MultiEdit|Write",
+        "matcher": "Edit|Write",
         "hooks": [
           {
             "type": "command",
@@ -202,7 +326,7 @@ Block edits to sensitive files:
 
 ## Learn more
 
-* For reference documentation on hooks, see [Hooks reference](/en/docs/claude-code/hooks).
-* For comprehensive security best practices and safety guidelines, see [Security Considerations](/en/docs/claude-code/hooks#security-considerations) in the hooks reference documentation.
-* For troubleshooting steps and debugging techniques, see [Debugging](/en/docs/claude-code/hooks#debugging) in the hooks reference
+* For reference documentation on hooks, see [Hooks reference](/en/hooks).
+* For comprehensive security best practices and safety guidelines, see [Security Considerations](/en/hooks#security-considerations) in the hooks reference documentation.
+* For troubleshooting steps and debugging techniques, see [Debugging](/en/hooks#debugging) in the hooks reference
   documentation.

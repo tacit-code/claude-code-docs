@@ -6,7 +6,7 @@
 
 Claude cannot control the theme of your terminal. That's handled by your terminal application. You can match Claude Code's theme to your terminal any time via the `/config` command.
 
-For additional customization of the Claude Code interface itself, you can configure a [custom status line](/en/docs/claude-code/statusline) to display contextual information like the current model, working directory, or git branch at the bottom of your terminal.
+For additional customization of the Claude Code interface itself, you can configure a [custom status line](/en/statusline) to display contextual information like the current model, working directory, or git branch at the bottom of your terminal.
 
 ### Line breaks
 
@@ -35,16 +35,6 @@ Run `/terminal-setup` within Claude Code to automatically configure Shift+Enter.
 
 Never miss when Claude completes a task with proper notification configuration:
 
-#### Terminal bell notifications
-
-Enable sound alerts when tasks complete:
-
-```sh
-claude config set --global preferredNotifChannel terminal_bell
-```
-
-**For macOS users**: Don't forget to enable notification permissions in System Settings → Notifications → \[Your Terminal App].
-
 #### iTerm 2 system notifications
 
 For iTerm 2 alerts when tasks complete:
@@ -58,7 +48,7 @@ Note that these notifications are specific to iTerm 2 and not available in the d
 
 #### Custom notification hooks
 
-For advanced notification handling, you can create [notification hooks](/en/docs/claude-code/hooks#notification) to run your own logic.
+For advanced notification handling, you can create [notification hooks](/en/hooks#notification) to run your own logic.
 
 ### Handling large inputs
 

@@ -10,59 +10,93 @@ Make sure you have:
 
 * A terminal or command prompt open
 * A code project to work with
+* A [Claude.ai](https://claude.ai) (recommended) or [Claude Console](https://console.anthropic.com/) account
 
 ## Step 1: Install Claude Code
 
-### NPM Install
+To install Claude Code, use one of the following methods:
 
-If you have [Node.js 18 or newer installed](https://nodejs.org/en/download/):
+<Tabs>
+  <Tab title="Native Install (Recommended)">
+    **Homebrew (macOS, Linux):**
 
-```sh
-npm install -g @anthropic-ai/claude-code
+    ```sh  theme={null}
+    brew install --cask claude-code
+    ```
+
+    **macOS, Linux, WSL:**
+
+    ```bash  theme={null}
+    curl -fsSL https://claude.ai/install.sh | bash
+    ```
+
+    **Windows PowerShell:**
+
+    ```powershell  theme={null}
+    irm https://claude.ai/install.ps1 | iex
+    ```
+
+    **Windows CMD:**
+
+    ```batch  theme={null}
+    curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+    ```
+  </Tab>
+
+  <Tab title="NPM">
+    If you have [Node.js 18 or newer installed](https://nodejs.org/en/download/):
+
+    ```sh  theme={null}
+    npm install -g @anthropic-ai/claude-code
+    ```
+  </Tab>
+</Tabs>
+
+## Step 2: Log in to your account
+
+Claude Code requires an account to use. When you start an interactive session with the `claude` command, you'll need to log in:
+
+```bash  theme={null}
+claude
+# You'll be prompted to log in on first use
 ```
 
-### Native Install
-
-<Tip>
-  Alternatively, try our new native install, now in beta.
-</Tip>
-
-**macOS, Linux, WSL:**
-
-```bash
-curl -fsSL claude.ai/install.sh | bash
+```bash  theme={null}
+/login
+# Follow the prompts to log in with your account
 ```
 
-**Windows PowerShell:**
+You can log in using either account type:
 
-```powershell
-irm https://claude.ai/install.ps1 | iex
-```
+* [Claude.ai](https://claude.ai) (subscription plans - recommended)
+* [Claude Console](https://console.anthropic.com/) (API access with pre-paid credits)
 
-## Step 2: Start your first session
+Once logged in, your credentials are stored and you won't need to log in again.
+
+<Note>
+  When you first authenticate Claude Code with your Claude Console account, a workspace called "Claude Code" is automatically created for you. This workspace provides centralized cost tracking and management for all Claude Code usage in your organization.
+</Note>
+
+<Note>
+  You can have both account types under the same email address. If you need to log in again or switch accounts, use the `/login` command within Claude Code.
+</Note>
+
+## Step 3: Start your first session
 
 Open your terminal in any project directory and start Claude Code:
 
-```bash
+```bash  theme={null}
 cd /path/to/your/project
 claude
 ```
 
-You'll see the Claude Code prompt inside a new interactive session:
-
-```
-✻ Welcome to Claude Code!
-
-...
-
-> Try "create a util logging.py that..." 
-```
+You'll see the Claude Code welcome screen with your session information, recent conversations, and latest updates. Type `/help` for available commands or `/resume` to continue a previous conversation.
 
 <Tip>
-  Your credentials are securely stored on your system. Learn more in [Credential Management](/en/docs/claude-code/iam#credential-management).
+  After logging in (Step 2), your credentials are stored on your system. Learn more in [Credential Management](/en/iam#credential-management).
 </Tip>
 
-## Step 3: Ask your first question
+## Step 4: Ask your first question
 
 Let's start with understanding your codebase. Try one of these commands:
 
@@ -102,7 +136,7 @@ You can also ask Claude about its own capabilities:
   Claude Code reads your files as needed - you don't have to manually add context. Claude also has access to its own documentation and can answer questions about its features and capabilities.
 </Note>
 
-## Step 4: Make your first code change
+## Step 5: Make your first code change
 
 Now let's make Claude Code do some actual coding. Try a simple task:
 
@@ -121,7 +155,7 @@ Claude Code will:
   Claude Code always asks for permission before modifying files. You can approve individual changes or enable "Accept all" mode for a session.
 </Note>
 
-## Step 5: Use Git with Claude Code
+## Step 6: Use Git with Claude Code
 
 Claude Code makes Git operations conversational:
 
@@ -147,7 +181,7 @@ You can also prompt for more complex Git operations:
 > help me resolve merge conflicts
 ```
 
-## Step 6: Fix a bug or add a feature
+## Step 7: Fix a bug or add a feature
 
 Claude is proficient at debugging and feature implementation.
 
@@ -170,7 +204,7 @@ Claude Code will:
 * Implement a solution
 * Run tests if available
 
-## Step 7: Test out other common workflows
+## Step 8: Test out other common workflows
 
 There are a number of ways to work with Claude:
 
@@ -218,7 +252,7 @@ Here are the most important commands for daily use:
 | `/help`             | Show available commands           | `> /help`                           |
 | `exit` or Ctrl+C    | Exit Claude Code                  | `> exit`                            |
 
-See the [CLI reference](/en/docs/claude-code/cli-reference) for a complete list of commands.
+See the [CLI reference](/en/cli-reference) for a complete list of commands.
 
 ## Pro tips for beginners
 
@@ -258,6 +292,7 @@ See the [CLI reference](/en/docs/claude-code/cli-reference) for a complete list 
   </Accordion>
 
   <Accordion title="Save time with shortcuts">
+    * Press `?` to see all available keyboard shortcuts
     * Use Tab for command completion
     * Press ↑ for command history
     * Type `/` to see all slash commands
@@ -269,16 +304,20 @@ See the [CLI reference](/en/docs/claude-code/cli-reference) for a complete list 
 Now that you've learned the basics, explore more advanced features:
 
 <CardGroup cols={3}>
-  <Card title="Common workflows" icon="graduation-cap" href="/en/docs/claude-code/common-workflows">
+  <Card title="Common workflows" icon="graduation-cap" href="/en/common-workflows">
     Step-by-step guides for common tasks
   </Card>
 
-  <Card title="CLI reference" icon="terminal" href="/en/docs/claude-code/cli-reference">
+  <Card title="CLI reference" icon="terminal" href="/en/cli-reference">
     Master all commands and options
   </Card>
 
-  <Card title="Configuration" icon="gear" href="/en/docs/claude-code/settings">
+  <Card title="Configuration" icon="gear" href="/en/settings">
     Customize Claude Code for your workflow
+  </Card>
+
+  <Card title="Claude Code on the web" icon="cloud" href="/en/claude-code-on-the-web">
+    Run tasks asynchronously in the cloud
   </Card>
 </CardGroup>
 
