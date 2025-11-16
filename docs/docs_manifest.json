@@ -117,8 +117,8 @@
     "llm-gateway.md": {
       "original_url": "https://code.claude.com/docs/en/llm-gateway",
       "original_md_url": "https://code.claude.com/docs/en/llm-gateway.md",
-      "hash": "be6e41580136854f77333c4f1738e8f11eada6b837643055a6efa6b374043d05",
-      "last_updated": "2025-11-14T15:18:49.446039"
+      "hash": "0b2f2340f03d8f32ab6a35d2a7fa74ce97a7aab3882588b9758c9c5bd6ff3bae",
+      "last_updated": "2025-11-16T00:04:37.082887"
     },
     "mcp.md": {
       "original_url": "https://code.claude.com/docs/en/mcp",
@@ -273,8 +273,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-11-15T21:01:49.236775",
-    "fetch_duration_seconds": 25.797641,
+    "last_fetch_completed": "2025-11-16T00:04:51.707014",
+    "fetch_duration_seconds": 27.384033,
     "total_pages_discovered": 44,
     "pages_fetched_successfully": 45,
     "pages_failed": 0,
@@ -284,7 +284,7 @@
     "total_files": 45,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-11-15T21:01:49.236796",
+  "last_updated": "2025-11-16T00:04:51.707042",
   "base_url": "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/docs/",
   "github_repository": "ericbuess/claude-code-docs",
   "github_ref": "main",
