@@ -249,8 +249,8 @@
     "sub-agents.md": {
       "original_url": "https://code.claude.com/docs/en/sub-agents",
       "original_md_url": "https://code.claude.com/docs/en/sub-agents.md",
-      "hash": "04e53693f79a1da0749ad391779f898f27ca82075d8b08a1080f0b2b78966306",
-      "last_updated": "2025-11-27T06:02:32.958833"
+      "hash": "67c4b290ac00968e3ca3e532231f077f70f0c45f279d0b9b995781d025b9c79b",
+      "last_updated": "2025-12-02T00:04:48.804655"
     },
     "terminal-config.md": {
       "original_url": "https://code.claude.com/docs/en/terminal-config",
@@ -285,8 +285,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-12-01T21:01:57.022314",
-    "fetch_duration_seconds": 28.52268,
+    "last_fetch_completed": "2025-12-02T00:04:51.191669",
+    "fetch_duration_seconds": 27.954934,
     "total_pages_discovered": 46,
     "pages_fetched_successfully": 47,
     "pages_failed": 0,
@@ -296,7 +296,7 @@
     "total_files": 47,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-12-01T21:01:57.022338",
+  "last_updated": "2025-12-02T00:04:51.191694",
   "base_url": "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/docs/",
   "github_repository": "ericbuess/claude-code-docs",
   "github_ref": "main",
