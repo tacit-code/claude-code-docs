@@ -27,8 +27,8 @@
     "cli-reference.md": {
       "original_url": "https://code.claude.com/docs/en/cli-reference",
       "original_md_url": "https://code.claude.com/docs/en/cli-reference.md",
-      "hash": "e2e8493a4f383f986674f01656e6a25aa3721e5929d08a5adfad8172072b7fba",
-      "last_updated": "2025-11-27T06:02:11.464483"
+      "hash": "740e37a9798a59dc90e9cf3923aebd5d1dd14f40ddafefd16fd5696548407857",
+      "last_updated": "2025-12-04T21:01:41.653791"
     },
     "common-workflows.md": {
       "original_url": "https://code.claude.com/docs/en/common-workflows",
@@ -285,8 +285,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-12-04T18:02:31.643819",
-    "fetch_duration_seconds": 27.364538,
+    "last_fetch_completed": "2025-12-04T21:02:06.571079",
+    "fetch_duration_seconds": 27.769433,
     "total_pages_discovered": 46,
     "pages_fetched_successfully": 47,
     "pages_failed": 0,
@@ -296,7 +296,7 @@
     "total_files": 47,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-12-04T18:02:31.643843",
+  "last_updated": "2025-12-04T21:02:06.571108",
   "base_url": "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/docs/",
   "github_repository": "ericbuess/claude-code-docs",
   "github_ref": "main",
