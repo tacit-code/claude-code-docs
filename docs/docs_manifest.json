@@ -189,8 +189,8 @@
     "plugins-reference.md": {
       "original_url": "https://code.claude.com/docs/en/plugins-reference",
       "original_md_url": "https://code.claude.com/docs/en/plugins-reference.md",
-      "hash": "2b5fc63a0de062611401e41a148acc7c1984facb6fbbd5cb19de7bd2ca86e3d2",
-      "last_updated": "2025-11-27T06:02:26.924680"
+      "hash": "564f1fd7b7d2daaf94a5023d996f1d5e8ba49de97b2411a20a69e4502ac9178b",
+      "last_updated": "2025-12-04T18:02:22.878382"
     },
     "quickstart.md": {
       "original_url": "https://code.claude.com/docs/en/quickstart",
@@ -285,8 +285,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-12-04T15:01:55.825548",
-    "fetch_duration_seconds": 26.780221,
+    "last_fetch_completed": "2025-12-04T18:02:31.643819",
+    "fetch_duration_seconds": 27.364538,
     "total_pages_discovered": 46,
     "pages_fetched_successfully": 47,
     "pages_failed": 0,
@@ -296,7 +296,7 @@
     "total_files": 47,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-12-04T15:01:55.825581",
+  "last_updated": "2025-12-04T18:02:31.643843",
   "base_url": "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/docs/",
   "github_repository": "ericbuess/claude-code-docs",
   "github_ref": "main",
