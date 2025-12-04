@@ -131,6 +131,48 @@ claude
 
 This removes your stored authentication information and forces a clean login.
 
+## Configuration file locations
+
+Claude Code stores configuration in several locations:
+
+| File                          | Purpose                                                                |
+| :---------------------------- | :--------------------------------------------------------------------- |
+| `~/.claude/settings.json`     | User settings (permissions, hooks, model overrides)                    |
+| `.claude/settings.json`       | Project settings (checked into source control)                         |
+| `.claude/settings.local.json` | Local project settings (gitignored)                                    |
+| `~/.claude.json`              | Global state (theme, OAuth, MCP servers, allowed tools)                |
+| `.mcp.json`                   | Project MCP servers (checked into source control)                      |
+| `managed-settings.json`       | [Enterprise managed settings](/en/settings#settings-files)             |
+| `managed-mcp.json`            | [Enterprise managed MCP servers](/en/mcp#enterprise-mcp-configuration) |
+
+On Windows, `~` refers to your user home directory (e.g., `C:\Users\YourName`).
+
+**Enterprise managed file locations:**
+
+* macOS: `/Library/Application Support/ClaudeCode/`
+* Linux/WSL: `/etc/claude-code/`
+* Windows: `C:\ProgramData\ClaudeCode\`
+
+For details on configuring these files, see [Settings](/en/settings) and [MCP](/en/mcp).
+
+### Resetting configuration
+
+To reset Claude Code to default settings, you can remove the configuration files:
+
+```bash  theme={null}
+# Reset all user settings and state
+rm ~/.claude.json
+rm -rf ~/.claude/
+
+# Reset project-specific settings
+rm -rf .claude/
+rm .mcp.json
+```
+
+<Warning>
+  This will remove all your settings, allowed tools, MCP server configurations, and session history.
+</Warning>
+
 ## Performance and stability
 
 ### High CPU or memory usage
