@@ -101,30 +101,6 @@ This command installs the appropriate build of Claude Code for your operating sy
   Make sure that you have the installation directory in your system PATH.
 </Tip>
 
-#### Alternative solution: Migrate to local installation
-
-Alternatively, if Claude Code will run, you can migrate to a local installation:
-
-```bash  theme={null}
-claude migrate-installer
-```
-
-This moves Claude Code to `~/.claude/local/` and sets up an alias in your shell configuration. No `sudo` is required for future updates.
-
-After migration, restart your shell, and then verify your installation:
-
-On macOS/Linux/WSL:
-
-```bash  theme={null}
-which claude  # Should show an alias to ~/.claude/local/claude
-```
-
-On Windows:
-
-```powershell  theme={null}
-where claude  # Should show path to claude executable
-```
-
 Verify installation:
 
 ```bash  theme={null}
@@ -252,7 +228,7 @@ Then restart WSL with `wsl --shutdown` from PowerShell.
   These networking issues only affect WSL2. WSL1 uses the host's network directly and doesn't require these configurations.
 </Note>
 
-For additional JetBrains configuration tips, see our [IDE integration guide](/en/vs-code#jetbrains-plugin-settings).
+For additional JetBrains configuration tips, see our [JetBrains IDE guide](/en/jetbrains#plugin-settings).
 
 ### Reporting Windows IDE integration issues (both native and WSL)
 
