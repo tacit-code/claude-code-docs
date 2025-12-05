@@ -99,8 +99,8 @@
     "iam.md": {
       "original_url": "https://code.claude.com/docs/en/iam",
       "original_md_url": "https://code.claude.com/docs/en/iam.md",
-      "hash": "ba69e3e52403f6dc96f8b90ed7b4f980c2cc45c8cad5180f5b14133884abfa97",
-      "last_updated": "2025-11-27T06:02:18.362249"
+      "hash": "8cd1b338ad8896333a174bb24ea6252fb9af4bcf3c47b37bfb46476e3640f940",
+      "last_updated": "2025-12-05T00:04:40.410273"
     },
     "interactive-mode.md": {
       "original_url": "https://code.claude.com/docs/en/interactive-mode",
@@ -129,14 +129,14 @@
     "mcp.md": {
       "original_url": "https://code.claude.com/docs/en/mcp",
       "original_md_url": "https://code.claude.com/docs/en/mcp.md",
-      "hash": "ee9ab739aaf47a19347f966226892d99958fff8c28834ce2a545190dedb77147",
-      "last_updated": "2025-12-04T06:02:19.157888"
+      "hash": "234059c2accbf9cffb0d3626b63c7e13c23cbfdb090a1e0381b7bc70447ed577",
+      "last_updated": "2025-12-05T00:04:43.456959"
     },
     "memory.md": {
       "original_url": "https://code.claude.com/docs/en/memory",
       "original_md_url": "https://code.claude.com/docs/en/memory.md",
-      "hash": "647ebd69225e515b92a716e0a0f0826332c4f6ccebbc98ed2ca113abc60834bf",
-      "last_updated": "2025-12-02T21:01:41.672199"
+      "hash": "bdef6dbaa9e8f3478fef6c175016eb7487afdb6935f7976cd51a20709524093a",
+      "last_updated": "2025-12-05T00:04:44.134817"
     },
     "microsoft-foundry.md": {
       "original_url": "https://code.claude.com/docs/en/microsoft-foundry",
@@ -153,8 +153,8 @@
     "monitoring-usage.md": {
       "original_url": "https://code.claude.com/docs/en/monitoring-usage",
       "original_md_url": "https://code.claude.com/docs/en/monitoring-usage.md",
-      "hash": "88294d17802849142f3f2471a7cfb4a74e54249c3880e25ca3c4c9b7747ea3d8",
-      "last_updated": "2025-11-27T06:02:23.451801"
+      "hash": "f189b4d2db0f2f64969f66e8ff243aacc9cb6ad3524edf323d9c6fb200cd98a7",
+      "last_updated": "2025-12-05T00:04:45.941963"
     },
     "network-config.md": {
       "original_url": "https://code.claude.com/docs/en/network-config",
@@ -219,8 +219,8 @@
     "settings.md": {
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "c9fb1446b07c6677d6c42f7beb01149f739d4ec17a3143baa9c3eedfe864fd47",
-      "last_updated": "2025-12-04T06:02:28.043270"
+      "hash": "1becdffa704ec457f6b0dfd88edaa4a0939d8aeeec75f2f366392d6af0248f70",
+      "last_updated": "2025-12-05T00:04:52.836531"
     },
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
@@ -273,20 +273,20 @@
     "vs-code.md": {
       "original_url": "https://code.claude.com/docs/en/vs-code",
       "original_md_url": "https://code.claude.com/docs/en/vs-code.md",
-      "hash": "4c453e13ccf642e8fda8a15a99c0bf97cbb87e1a21f10c3c5849e6641f768cd8",
-      "last_updated": "2025-11-27T06:02:35.219658"
+      "hash": "873c0c7a254b6c56c18ede51867e4d26063ebaafb2028756e1178e275df41242",
+      "last_updated": "2025-12-05T00:04:58.479277"
     },
     "changelog.md": {
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "0d12c1b3f25b92fb0a122f1b13bcf12fab24cc6046f937cc985af2d0b6cf5b0e",
-      "last_updated": "2025-12-03T21:01:53.730745",
+      "hash": "ff38c50e6f6331cc24d51426f0a78904d76b2176409915ced9be70631ca6e9f3",
+      "last_updated": "2025-12-05T00:04:58.701949",
       "source": "claude-code-repository"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-12-04T21:02:06.571079",
-    "fetch_duration_seconds": 27.769433,
+    "last_fetch_completed": "2025-12-05T00:04:58.701975",
+    "fetch_duration_seconds": 28.571861,
     "total_pages_discovered": 46,
     "pages_fetched_successfully": 47,
     "pages_failed": 0,
@@ -296,7 +296,7 @@
     "total_files": 47,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-12-04T21:02:06.571108",
+  "last_updated": "2025-12-05T00:04:58.701995",
   "base_url": "https://raw.githubusercontent.com/ericbuess/claude-code-docs/main/docs/",
   "github_repository": "ericbuess/claude-code-docs",
   "github_ref": "main",
