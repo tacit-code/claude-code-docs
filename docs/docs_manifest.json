@@ -105,8 +105,8 @@
     "interactive-mode.md": {
       "original_url": "https://code.claude.com/docs/en/interactive-mode",
       "original_md_url": "https://code.claude.com/docs/en/interactive-mode.md",
-      "hash": "108e59c5f5dbe7d1507740b1f016125d3c6c1ec96815859f267048360f4e522b",
-      "last_updated": "2025-12-11T18:19:14.575392"
+      "hash": "be6174278ef58f36a197956a0335d49e44094142aa9b9a7686a6502017e67b5c",
+      "last_updated": "2025-12-11T21:15:14.431520"
     },
     "jetbrains.md": {
       "original_url": "https://code.claude.com/docs/en/jetbrains",
@@ -285,14 +285,14 @@
     "changelog.md": {
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "e05565def5ab336a16e265a979a0f5590ca524aa104a4aeb10b61d42ab4da510",
-      "last_updated": "2025-12-11T06:22:59.983400",
+      "hash": "7a5777b15105b95c74854149a3582bde81d03c490db7ebab3bb9992613d06783",
+      "last_updated": "2025-12-11T21:15:32.572975",
       "source": "claude-code-repository"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2025-12-11T18:19:32.175195",
-    "fetch_duration_seconds": 28.238669,
+    "last_fetch_completed": "2025-12-11T21:15:32.572993",
+    "fetch_duration_seconds": 28.871779,
     "total_pages_discovered": 47,
     "pages_fetched_successfully": 48,
     "pages_failed": 0,
@@ -302,7 +302,7 @@
     "total_files": 48,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2025-12-11T18:19:32.175226",
+  "last_updated": "2025-12-11T21:15:32.573014",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
