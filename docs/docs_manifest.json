@@ -111,8 +111,8 @@
     "iam.md": {
       "original_url": "https://code.claude.com/docs/en/iam",
       "original_md_url": "https://code.claude.com/docs/en/iam.md",
-      "hash": "cf1080d3e63f862024ee17d38307695405b47d633b52a636584988dc255493ed",
-      "last_updated": "2026-01-19T01:10:23.350436"
+      "hash": "6a3006b5c43109c2f036f60e0f453ecddf0663e64d0fa0379c1c7440c0026941",
+      "last_updated": "2026-01-20T15:22:48.634553"
     },
     "interactive-mode.md": {
       "original_url": "https://code.claude.com/docs/en/interactive-mode",
@@ -225,8 +225,8 @@
     "settings.md": {
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "961cb0b3c3d37f429c53e5b7499c3446e2d10e0c695abcf5bfbd2e281e982915",
-      "last_updated": "2026-01-19T01:10:34.429171"
+      "hash": "df52065887700712289a50a16e5221ced1321acec88bb5892e04417d5530eb26",
+      "last_updated": "2026-01-20T15:22:59.697101"
     },
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
@@ -285,8 +285,8 @@
     "vs-code.md": {
       "original_url": "https://code.claude.com/docs/en/vs-code",
       "original_md_url": "https://code.claude.com/docs/en/vs-code.md",
-      "hash": "2310c6cb972f83069bac9a52e1130b52486e1cd2f29c5adabd128cfcc403c415",
-      "last_updated": "2025-12-19T21:13:18.146160"
+      "hash": "42bad14df3a3df5fa7261b2d6eb803a739bf9398a22585e9c56fc17441a680a5",
+      "last_updated": "2026-01-20T15:23:05.473502"
     },
     "changelog.md": {
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
@@ -297,8 +297,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-20T12:31:58.821571",
-    "fetch_duration_seconds": 26.965168,
+    "last_fetch_completed": "2026-01-20T15:23:05.484702",
+    "fetch_duration_seconds": 27.683177,
     "total_pages_discovered": 48,
     "pages_fetched_successfully": 49,
     "pages_failed": 0,
@@ -308,7 +308,7 @@
     "total_files": 49,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-01-20T12:31:58.821599",
+  "last_updated": "2026-01-20T15:23:05.484723",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
