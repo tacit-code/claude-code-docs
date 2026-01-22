@@ -309,8 +309,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-22T15:22:36.979920",
-    "fetch_duration_seconds": 29.408674,
+    "last_fetch_completed": "2026-01-22T18:21:13.821751",
+    "fetch_duration_seconds": 28.277862,
     "total_pages_discovered": 50,
     "pages_fetched_successfully": 51,
     "pages_failed": 0,
@@ -320,7 +320,7 @@
     "total_files": 51,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-01-22T15:22:36.979946",
+  "last_updated": "2026-01-22T18:21:13.821780",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
