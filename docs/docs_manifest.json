@@ -15,8 +15,8 @@
     "best-practices.md": {
       "original_url": "https://code.claude.com/docs/en/best-practices",
       "original_md_url": "https://code.claude.com/docs/en/best-practices.md",
-      "hash": "075193a85f4d1c4a10e966eef9d6aa3035e0fe0a157a5d0d387a28aeaff70050",
-      "last_updated": "2026-01-26T21:16:30.273958"
+      "hash": "c9dfc0f79146348e29bb8cc716cc635c96cf691266d3df6341e72c24132f3c39",
+      "last_updated": "2026-01-27T18:27:37.213519"
     },
     "checkpointing.md": {
       "original_url": "https://code.claude.com/docs/en/checkpointing",
@@ -39,8 +39,8 @@
     "cli-reference.md": {
       "original_url": "https://code.claude.com/docs/en/cli-reference",
       "original_md_url": "https://code.claude.com/docs/en/cli-reference.md",
-      "hash": "472fa3b133dc0e6080b11e275265a5ff64ed200d689c773339c71b4c984340a1",
-      "last_updated": "2026-01-24T03:56:42.626160"
+      "hash": "aa1990fc9de14fbfa44f769ff06698fb417a1738b4377330de9be5e3597723ff",
+      "last_updated": "2026-01-27T18:27:39.467061"
     },
     "common-workflows.md": {
       "original_url": "https://code.claude.com/docs/en/common-workflows",
@@ -105,8 +105,8 @@
     "headless.md": {
       "original_url": "https://code.claude.com/docs/en/headless",
       "original_md_url": "https://code.claude.com/docs/en/headless.md",
-      "hash": "3e7f51c5f6619d0d957121a8460e9a0c48fd26bc366cbc4fda757ab452caf7d2",
-      "last_updated": "2026-01-24T03:56:49.305680"
+      "hash": "d534f05ecf807c074920fc45f66f5beda2a6264a50e339792dd3a191f8f8143e",
+      "last_updated": "2026-01-27T18:27:45.725277"
     },
     "hooks.md": {
       "original_url": "https://code.claude.com/docs/en/hooks",
@@ -129,8 +129,8 @@
     "iam.md": {
       "original_url": "https://code.claude.com/docs/en/iam",
       "original_md_url": "https://code.claude.com/docs/en/iam.md",
-      "hash": "6632c2c92ed3dd8e6f7047c35fdce3040d10a90ad150d194e582a4d7921d5649",
-      "last_updated": "2026-01-25T04:10:34.998113"
+      "hash": "8b1d843da8a6add5428327232b74688ecdbfe9cc582ad1214928e88e74c6e92a",
+      "last_updated": "2026-01-27T18:27:47.981918"
     },
     "interactive-mode.md": {
       "original_url": "https://code.claude.com/docs/en/interactive-mode",
@@ -309,8 +309,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-01-27T15:23:46.743333",
-    "fetch_duration_seconds": 32.247348,
+    "last_fetch_completed": "2026-01-27T18:28:04.098340",
+    "fetch_duration_seconds": 28.278522,
     "total_pages_discovered": 50,
     "pages_fetched_successfully": 51,
     "pages_failed": 0,
@@ -320,7 +320,7 @@
     "total_files": 51,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-01-27T15:23:46.743354",
+  "last_updated": "2026-01-27T18:28:04.098370",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
