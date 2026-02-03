@@ -147,8 +147,8 @@
     "keybindings.md": {
       "original_url": "https://code.claude.com/docs/en/keybindings",
       "original_md_url": "https://code.claude.com/docs/en/keybindings.md",
-      "hash": "7da9cc5e2bbd94d28bbedfd23a8858123d1febb2484d242d07b7596df998101d",
-      "last_updated": "2026-01-28T15:24:29.122041"
+      "hash": "6cae341c14c021c3bfaa95b124e774f71595849de7995e6fa8a2898d691eb08a",
+      "last_updated": "2026-02-03T15:41:14.811240"
     },
     "legal-and-compliance.md": {
       "original_url": "https://code.claude.com/docs/en/legal-and-compliance",
@@ -321,8 +321,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-02-03T12:39:56.507437",
-    "fetch_duration_seconds": 29.84448,
+    "last_fetch_completed": "2026-02-03T15:41:30.243982",
+    "fetch_duration_seconds": 29.732136,
     "total_pages_discovered": 52,
     "pages_fetched_successfully": 53,
     "pages_failed": 0,
@@ -332,7 +332,7 @@
     "total_files": 53,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-02-03T12:39:56.507465",
+  "last_updated": "2026-02-03T15:41:30.244009",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
