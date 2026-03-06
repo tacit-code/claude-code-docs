@@ -339,8 +339,8 @@
     "vs-code.md": {
       "original_url": "https://code.claude.com/docs/en/vs-code",
       "original_md_url": "https://code.claude.com/docs/en/vs-code.md",
-      "hash": "205d5139914beb32602d5a57a97b7e967ece73c10220cc7675b543cdcc04fc6a",
-      "last_updated": "2026-02-28T21:13:46.100902"
+      "hash": "27a51569977327249261c6c10c30242a52b419d801e11fd635db5067acee117e",
+      "last_updated": "2026-03-06T04:27:21.101189"
     },
     "zero-data-retention.md": {
       "original_url": "https://code.claude.com/docs/en/zero-data-retention",
@@ -357,8 +357,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-06T01:22:26.342381",
-    "fetch_duration_seconds": 34.275376,
+    "last_fetch_completed": "2026-03-06T04:27:21.794106",
+    "fetch_duration_seconds": 33.068455,
     "total_pages_discovered": 58,
     "pages_fetched_successfully": 59,
     "pages_failed": 0,
@@ -368,7 +368,7 @@
     "total_files": 59,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-03-06T01:22:26.342399",
+  "last_updated": "2026-03-06T04:27:21.794141",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
