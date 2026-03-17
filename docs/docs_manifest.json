@@ -262,8 +262,8 @@
     "plugin-marketplaces.md": {
       "original_url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "original_md_url": "https://code.claude.com/docs/en/plugin-marketplaces.md",
-      "hash": "a3ec4e7c45a28f07f2fe6beb5a8bf593af088464776dc42fc82a419a79213f41",
-      "last_updated": "2026-03-12T15:51:28.203935"
+      "hash": "56a1477e15ce0c6b8a86d5f6d694f083766f0782da35629949c7ba16b66853f9",
+      "last_updated": "2026-03-17T04:46:39.963778"
     },
     "plugins.md": {
       "original_url": "https://code.claude.com/docs/en/plugins",
@@ -387,8 +387,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-03-17T01:20:54.397593",
-    "fetch_duration_seconds": 38.964902,
+    "last_fetch_completed": "2026-03-17T04:46:51.594181",
+    "fetch_duration_seconds": 37.275671,
     "total_pages_discovered": 64,
     "pages_fetched_successfully": 65,
     "pages_failed": 0,
@@ -398,7 +398,7 @@
     "total_files": 64,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-03-17T01:20:54.397611",
+  "last_updated": "2026-03-17T04:46:51.594213",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
