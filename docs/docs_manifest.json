@@ -286,8 +286,8 @@
     "output-styles.md": {
       "original_url": "https://code.claude.com/docs/en/output-styles",
       "original_md_url": "https://code.claude.com/docs/en/output-styles.md",
-      "hash": "28dc102fd6e5bc97cfd3b3dbb1daec89bbedccce3be0b2f2e6ae5b7140eed12e",
-      "last_updated": "2026-03-11T21:25:32.834865"
+      "hash": "1d16f362e7097a01fb09d3f9b0aa828faebbf58393cbbfa4b09663b911afe606",
+      "last_updated": "2026-04-02T04:57:34.585519"
     },
     "overview.md": {
       "original_url": "https://code.claude.com/docs/en/overview",
@@ -453,8 +453,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-02T01:26:45.951809",
-    "fetch_duration_seconds": 44.381742,
+    "last_fetch_completed": "2026-04-02T04:57:50.692799",
+    "fetch_duration_seconds": 44.616199,
     "total_pages_discovered": 75,
     "pages_fetched_successfully": 76,
     "pages_failed": 0,
@@ -464,7 +464,7 @@
     "total_files": 75,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-04-02T01:26:45.951829",
+  "last_updated": "2026-04-02T04:57:50.692822",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
