@@ -94,8 +94,8 @@
     "common-workflows.md": {
       "original_url": "https://code.claude.com/docs/en/common-workflows",
       "original_md_url": "https://code.claude.com/docs/en/common-workflows.md",
-      "hash": "8d0925d8739c66d4703755e29ccf79b831e78862ef6d148f6a53439b170bcc32",
-      "last_updated": "2026-04-02T18:44:08.802058"
+      "hash": "a10cfdca889795c293bfb706afa9ae22d7f7b014a0281c9343c6822df0d3422b",
+      "last_updated": "2026-04-02T21:29:22.036609"
     },
     "computer-use.md": {
       "original_url": "https://code.claude.com/docs/en/computer-use",
@@ -370,8 +370,8 @@
     "settings.md": {
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "bd26a6c24d7e4bc27d20bf2869b821a642a52cefd98fce03795d65b95ea20a72",
-      "last_updated": "2026-04-02T18:44:36.610633"
+      "hash": "7ace3a7c99bbec7e8b7f378af5c16162cdfe54f8318b816d5a88bbad4870b474",
+      "last_updated": "2026-04-02T21:29:49.879609"
     },
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
@@ -453,8 +453,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-02T18:44:44.542230",
-    "fetch_duration_seconds": 45.325411,
+    "last_fetch_completed": "2026-04-02T21:29:57.734839",
+    "fetch_duration_seconds": 45.130103,
     "total_pages_discovered": 75,
     "pages_fetched_successfully": 76,
     "pages_failed": 0,
@@ -464,7 +464,7 @@
     "total_files": 75,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-04-02T18:44:44.542257",
+  "last_updated": "2026-04-02T21:29:57.734860",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
