@@ -526,8 +526,8 @@
     "routines.md": {
       "original_url": "https://code.claude.com/docs/en/routines",
       "original_md_url": "https://code.claude.com/docs/en/routines.md",
-      "hash": "c9f02f6bfb4ee9fb3845f39ad7f619a7042d969fd674af0c006484bacdfc54f0",
-      "last_updated": "2026-04-15T07:20:31.913025"
+      "hash": "5a97652a7d298bf30ea82412e2696dfca4e1bd6edd56112ba6e51c75e2a41d64",
+      "last_updated": "2026-04-15T10:10:26.415855"
     },
     "sandboxing.md": {
       "original_url": "https://code.claude.com/docs/en/sandboxing",
@@ -669,8 +669,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-15T07:20:45.584478",
-    "fetch_duration_seconds": 65.296734,
+    "last_fetch_completed": "2026-04-15T10:10:39.822453",
+    "fetch_duration_seconds": 64.407584,
     "total_pages_discovered": 111,
     "pages_fetched_successfully": 112,
     "pages_failed": 0,
@@ -680,7 +680,7 @@
     "total_files": 111,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-04-15T07:20:45.584508",
+  "last_updated": "2026-04-15T10:10:39.822483",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
