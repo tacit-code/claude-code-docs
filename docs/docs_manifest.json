@@ -75,8 +75,8 @@
     "agent-sdk__overview.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/overview",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/overview.md",
-      "hash": "b27888bae229439e293d0e9a523fdeabc702c9da3a8bb48b505f46d68a672456",
-      "last_updated": "2026-04-17T21:34:30.071645"
+      "hash": "34580159869e1ab7be7064f33a1a7024757aec6771e4b6027fc089961b9c8cae",
+      "last_updated": "2026-04-28T21:50:47.743158"
     },
     "agent-sdk__permissions.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/permissions",
@@ -735,8 +735,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-28T19:22:47.575266",
-    "fetch_duration_seconds": 70.570308,
+    "last_fetch_completed": "2026-04-28T21:51:48.951153",
+    "fetch_duration_seconds": 68.217993,
     "total_pages_discovered": 122,
     "pages_fetched_successfully": 123,
     "pages_failed": 0,
@@ -746,7 +746,7 @@
     "total_files": 122,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-04-28T19:22:47.575293",
+  "last_updated": "2026-04-28T21:51:48.951185",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
