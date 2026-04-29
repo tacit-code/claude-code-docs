@@ -93,8 +93,8 @@
     "agent-sdk__python.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/python",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/python.md",
-      "hash": "768e7c9a233968641b70fec9023899c5c62bb7e35cdf9b11b1968b72af13c184",
-      "last_updated": "2026-04-24T01:53:21.194893"
+      "hash": "26f8c73ab456e2b47bd9747404a8f68542392efcc0096a8a45ee9ebe47f5860a",
+      "last_updated": "2026-04-29T08:02:35.994636"
     },
     "agent-sdk__quickstart.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/quickstart",
@@ -105,8 +105,8 @@
     "agent-sdk__secure-deployment.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/secure-deployment",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/secure-deployment.md",
-      "hash": "0345127a866db092fabffe01ad0568220413fb624ed7af668e0be307bfce3705",
-      "last_updated": "2026-04-16T19:00:29.899924"
+      "hash": "2a461c7caf4cc2d5352db78389442e8f99fff389c4d4d28a2074eec0095457cf",
+      "last_updated": "2026-04-29T08:02:37.496050"
     },
     "agent-sdk__sessions.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/sessions",
@@ -165,8 +165,8 @@
     "agent-sdk__typescript.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/typescript",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/typescript.md",
-      "hash": "768a29c8d5d13510936982749125da60e6dca163e0baaec846ad7b0e53e3f0e0",
-      "last_updated": "2026-04-28T05:51:21.133373"
+      "hash": "8a93641fc09c8779a6ae91ad26457963381f06337ce6e0dd5799342da94d4903",
+      "last_updated": "2026-04-29T08:02:46.802774"
     },
     "agent-sdk__typescript-v2-preview.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/typescript-v2-preview",
@@ -580,8 +580,8 @@
     "sandboxing.md": {
       "original_url": "https://code.claude.com/docs/en/sandboxing",
       "original_md_url": "https://code.claude.com/docs/en/sandboxing.md",
-      "hash": "cc7319690be3991d06dbec72b8083c98ba01ad2116bddd7817add45ca3bf3cc1",
-      "last_updated": "2026-04-29T02:08:33.429016"
+      "hash": "5deb69984405bab9f4ee790bc0b783730066fe11ed4572ec1bb1a39cb9a51f75",
+      "last_updated": "2026-04-29T08:03:41.278901"
     },
     "scheduled-tasks.md": {
       "original_url": "https://code.claude.com/docs/en/scheduled-tasks",
@@ -741,8 +741,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-04-29T05:47:28.175755",
-    "fetch_duration_seconds": 65.06753,
+    "last_fetch_completed": "2026-04-29T08:04:03.353210",
+    "fetch_duration_seconds": 101.138742,
     "total_pages_discovered": 123,
     "pages_fetched_successfully": 124,
     "pages_failed": 0,
@@ -752,7 +752,7 @@
     "total_files": 123,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-04-29T05:47:28.175777",
+  "last_updated": "2026-04-29T08:04:03.353237",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
