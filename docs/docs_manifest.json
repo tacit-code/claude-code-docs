@@ -225,8 +225,8 @@
     "changelog.md": {
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "ed63b72f27dc9a6daeb87988e365e5212b26f50d133da730661c5a5430384ec2",
-      "last_updated": "2026-05-06T02:03:27.626786",
+      "hash": "7dd706d59f476037f7846efb61c6bfb2c4a41a7fdba11e02c56b40fac5c31da7",
+      "last_updated": "2026-05-06T08:10:58.611418",
       "source": "claude-code-repository"
     },
     "channels.md": {
@@ -747,8 +747,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-06T05:50:35.343782",
-    "fetch_duration_seconds": 65.493809,
+    "last_fetch_completed": "2026-05-06T08:10:58.611457",
+    "fetch_duration_seconds": 68.528831,
     "total_pages_discovered": 124,
     "pages_fetched_successfully": 125,
     "pages_failed": 0,
@@ -758,7 +758,7 @@
     "total_files": 124,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-06T05:50:35.343822",
+  "last_updated": "2026-05-06T08:10:58.611477",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
