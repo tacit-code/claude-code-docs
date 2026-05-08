@@ -51,8 +51,8 @@
     "agent-sdk__mcp.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/mcp",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/mcp.md",
-      "hash": "73b006ba485630b1b3334faa685df2747fcfacaafbc4570c0c3d24f39597589f",
-      "last_updated": "2026-04-16T19:00:24.085902"
+      "hash": "dbd5c8da0cc8733869d64400f5b7d1cc5555951a74c0781f20145ed632aa5785",
+      "last_updated": "2026-05-08T21:51:52.028116"
     },
     "agent-sdk__migration-guide.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/migration-guide",
@@ -430,8 +430,8 @@
     "hooks.md": {
       "original_url": "https://code.claude.com/docs/en/hooks",
       "original_md_url": "https://code.claude.com/docs/en/hooks.md",
-      "hash": "f1bf5e376c8cd47b0fd56e5c2132bae454d2fed0367d91f0e3748b44e3d5791e",
-      "last_updated": "2026-05-08T02:12:45.524183"
+      "hash": "3b5782cc54f484e588a37923ad07779451ca291e6fda07fe1e9b530ebba385a3",
+      "last_updated": "2026-05-08T21:52:26.880519"
     },
     "hooks-guide.md": {
       "original_url": "https://code.claude.com/docs/en/hooks-guide",
@@ -616,8 +616,8 @@
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
       "original_md_url": "https://code.claude.com/docs/en/setup.md",
-      "hash": "4da6ea2da69d8a3eb9dd00b4d06e3f666d9fb6645722a617e7e70c2d206d0233",
-      "last_updated": "2026-05-06T16:24:06.242031"
+      "hash": "9e6d4fca383caaa8fef089c13f91915b7fc2d64d7721e681aaa5dc2a5f35e6a6",
+      "last_updated": "2026-05-08T21:52:43.916932"
     },
     "skills.md": {
       "original_url": "https://code.claude.com/docs/en/skills",
@@ -747,8 +747,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-08T19:06:19.381248",
-    "fetch_duration_seconds": 66.146323,
+    "last_fetch_completed": "2026-05-08T21:52:55.562239",
+    "fetch_duration_seconds": 68.217481,
     "total_pages_discovered": 124,
     "pages_fetched_successfully": 125,
     "pages_failed": 0,
@@ -758,7 +758,7 @@
     "total_files": 124,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-08T19:06:19.381267",
+  "last_updated": "2026-05-08T21:52:55.562269",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
