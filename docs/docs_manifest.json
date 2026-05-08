@@ -334,8 +334,8 @@
     "desktop.md": {
       "original_url": "https://code.claude.com/docs/en/desktop",
       "original_md_url": "https://code.claude.com/docs/en/desktop.md",
-      "hash": "b77cc431013c97c83cf3bc1c9d1ac0b26f328d4cac39dfebf9a4e03c8316e39f",
-      "last_updated": "2026-05-05T21:55:18.996540"
+      "hash": "0b1d44a51bee84b308f96cb4ecc9fcb0d8b6f4022f898c68ed6058fb1483333d",
+      "last_updated": "2026-05-08T07:18:00.649838"
     },
     "desktop-quickstart.md": {
       "original_url": "https://code.claude.com/docs/en/desktop-quickstart",
@@ -747,8 +747,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-08T05:24:24.423581",
-    "fetch_duration_seconds": 65.620438,
+    "last_fetch_completed": "2026-05-08T07:18:36.673100",
+    "fetch_duration_seconds": 65.331759,
     "total_pages_discovered": 124,
     "pages_fetched_successfully": 125,
     "pages_failed": 0,
@@ -758,7 +758,7 @@
     "total_files": 124,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-08T05:24:24.423611",
+  "last_updated": "2026-05-08T07:18:36.673133",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
