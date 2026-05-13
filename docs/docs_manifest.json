@@ -298,8 +298,8 @@
     "commands.md": {
       "original_url": "https://code.claude.com/docs/en/commands",
       "original_md_url": "https://code.claude.com/docs/en/commands.md",
-      "hash": "8fbb371fca56d452c83a4afabacbf81b619daef6c5b3db1c82cfbafdc4da8ed9",
-      "last_updated": "2026-05-13T02:25:59.823778"
+      "hash": "6d17bedc79fb189b002324cac0b0b4967989d1c508a7ecdf0271a2a4a805bad2",
+      "last_updated": "2026-05-13T17:09:41.288590"
     },
     "common-workflows.md": {
       "original_url": "https://code.claude.com/docs/en/common-workflows",
@@ -706,8 +706,8 @@
     "ultrareview.md": {
       "original_url": "https://code.claude.com/docs/en/ultrareview",
       "original_md_url": "https://code.claude.com/docs/en/ultrareview.md",
-      "hash": "a67476e59cc36003d1bdfd8585c0bcfbfb00094bb80fb44e93cfefddea8165b8",
-      "last_updated": "2026-04-29T16:24:59.567277"
+      "hash": "680c406390389952b40b9772c4f9a94e9db6d5d44588ae9620784cfb8d2cdcc7",
+      "last_updated": "2026-05-13T17:10:18.205330"
     },
     "voice-dictation.md": {
       "original_url": "https://code.claude.com/docs/en/voice-dictation",
@@ -789,8 +789,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-13T14:10:33.552457",
-    "fetch_duration_seconds": 72.039212,
+    "last_fetch_completed": "2026-05-13T17:10:25.274183",
+    "fetch_duration_seconds": 70.659918,
     "total_pages_discovered": 131,
     "pages_fetched_successfully": 132,
     "pages_failed": 0,
@@ -800,7 +800,7 @@
     "total_files": 131,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-13T14:10:33.552489",
+  "last_updated": "2026-05-13T17:10:25.274207",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
