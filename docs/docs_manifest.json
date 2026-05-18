@@ -664,8 +664,8 @@
     "statusline.md": {
       "original_url": "https://code.claude.com/docs/en/statusline",
       "original_md_url": "https://code.claude.com/docs/en/statusline.md",
-      "hash": "e993ddefc82f2afd3bbed775eb74572aa3b350c0f24aae8019782c0380028904",
-      "last_updated": "2026-05-07T05:54:09.432208"
+      "hash": "92fb53fe6dff1bf7a7ceff760d939590d91e7c11a2cdd78fc015b5d26fe6bb93",
+      "last_updated": "2026-05-18T17:27:08.833501"
     },
     "sub-agents.md": {
       "original_url": "https://code.claude.com/docs/en/sub-agents",
@@ -795,8 +795,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-18T12:22:56.490063",
-    "fetch_duration_seconds": 72.507462,
+    "last_fetch_completed": "2026-05-18T17:27:21.883957",
+    "fetch_duration_seconds": 79.247126,
     "total_pages_discovered": 132,
     "pages_fetched_successfully": 133,
     "pages_failed": 0,
@@ -806,7 +806,7 @@
     "total_files": 132,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-18T12:22:56.490094",
+  "last_updated": "2026-05-18T17:27:21.883986",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
