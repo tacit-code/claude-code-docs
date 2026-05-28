@@ -694,8 +694,8 @@
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
       "original_md_url": "https://code.claude.com/docs/en/setup.md",
-      "hash": "13f1b9e0376deb9bb242b66b91e0666362a74efe6a7b714308b9b797b88ddc0d",
-      "last_updated": "2026-05-28T06:46:27.493008"
+      "hash": "0f3777e78c4b08ccffb077c6e9b3799bf7c64403fa5640b096396ddbef5d3246",
+      "last_updated": "2026-05-28T12:21:09.432838"
     },
     "skills.md": {
       "original_url": "https://code.claude.com/docs/en/skills",
@@ -849,8 +849,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-28T06:46:49.082130",
-    "fetch_duration_seconds": 128.45526,
+    "last_fetch_completed": "2026-05-28T12:21:31.791503",
+    "fetch_duration_seconds": 125.704177,
     "total_pages_discovered": 141,
     "pages_fetched_successfully": 142,
     "pages_failed": 0,
@@ -860,7 +860,7 @@
     "total_files": 141,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-28T06:46:49.082161",
+  "last_updated": "2026-05-28T12:21:31.791548",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
