@@ -66,12 +66,12 @@ Add variables under the `env` key in a `settings.json` file. Claude Code reads t
 
 The file you choose controls who the variables apply to:
 
-| File                          | Applies to                                                   |
-| :---------------------------- | :----------------------------------------------------------- |
-| `~/.claude/settings.json`     | You, in every project                                        |
-| `.claude/settings.json`       | Everyone working in the project, checked into source control |
-| `.claude/settings.local.json` | You, in this project only, not checked in                    |
-| Managed settings              | Everyone in your organization, deployed by an admin          |
+| File                          | Applies to                                                                    |
+| :---------------------------- | :---------------------------------------------------------------------------- |
+| `~/.claude/settings.json`     | You, in every project                                                         |
+| `.claude/settings.json`       | Everyone working in the project, checked into source control                  |
+| `.claude/settings.local.json` | You, in this project only (add it to your gitignore if you create it by hand) |
+| Managed settings              | Everyone in your organization, deployed by an admin                           |
 
 See [Settings files](/en/settings#settings-files) for where each file lives and [Settings precedence](/en/settings#settings-precedence) for how they combine when more than one sets the same variable.
 
