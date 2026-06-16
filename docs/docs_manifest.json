@@ -586,8 +586,8 @@
     "permissions.md": {
       "original_url": "https://code.claude.com/docs/en/permissions",
       "original_md_url": "https://code.claude.com/docs/en/permissions.md",
-      "hash": "828701f97a6a2d4e7e16707b67860d51bd2554392a3e9c5d7b59359362802b0e",
-      "last_updated": "2026-06-15T22:59:21.386416"
+      "hash": "1964ac94612ea4c83d0a15bf13279d7ba63691d9c78df7c1c16652bd59466f4a",
+      "last_updated": "2026-06-16T18:53:56.846900"
     },
     "platforms.md": {
       "original_url": "https://code.claude.com/docs/en/platforms",
@@ -891,8 +891,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-16T13:25:05.649889",
-    "fetch_duration_seconds": 139.660918,
+    "last_fetch_completed": "2026-06-16T18:54:55.494233",
+    "fetch_duration_seconds": 177.387454,
     "total_pages_discovered": 148,
     "pages_fetched_successfully": 149,
     "pages_failed": 0,
@@ -902,7 +902,7 @@
     "total_files": 148,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-06-16T13:25:05.649922",
+  "last_updated": "2026-06-16T18:54:55.494263",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
