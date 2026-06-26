@@ -790,8 +790,8 @@
     "troubleshoot-install.md": {
       "original_url": "https://code.claude.com/docs/en/troubleshoot-install",
       "original_md_url": "https://code.claude.com/docs/en/troubleshoot-install.md",
-      "hash": "b84eb626cc45c320e721551f8543aa6f29c26f75ca737964bc6648e89e8d9f23",
-      "last_updated": "2026-06-15T22:59:47.398559"
+      "hash": "91e896304061d1160597e00438b21d91405c93f25dc6b5f5896cf35d210e3d42",
+      "last_updated": "2026-06-26T06:48:02.511809"
     },
     "troubleshooting.md": {
       "original_url": "https://code.claude.com/docs/en/troubleshooting",
@@ -927,8 +927,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-26T02:36:51.277960",
-    "fetch_duration_seconds": 153.112766,
+    "last_fetch_completed": "2026-06-26T06:48:25.213464",
+    "fetch_duration_seconds": 186.34359,
     "total_pages_discovered": 154,
     "pages_fetched_successfully": 155,
     "pages_failed": 0,
@@ -938,7 +938,7 @@
     "total_files": 154,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-06-26T02:36:51.277984",
+  "last_updated": "2026-06-26T06:48:25.213501",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
