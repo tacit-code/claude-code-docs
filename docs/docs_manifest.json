@@ -430,8 +430,8 @@
     "fullscreen.md": {
       "original_url": "https://code.claude.com/docs/en/fullscreen",
       "original_md_url": "https://code.claude.com/docs/en/fullscreen.md",
-      "hash": "8e0781b0cc4853fecff243dc56cd7adeabeae432a9f9da0dfdf9ccf99287648b",
-      "last_updated": "2026-06-24T17:01:16.750076"
+      "hash": "71f2a6d52631abbebdd60983a3c3c2fc7761bceb4dd1748a0aea6f3f37c698f1",
+      "last_updated": "2026-06-26T19:29:52.494134"
     },
     "github-actions.md": {
       "original_url": "https://code.claude.com/docs/en/github-actions",
@@ -927,8 +927,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-26T16:57:50.249268",
-    "fetch_duration_seconds": 143.500135,
+    "last_fetch_completed": "2026-06-26T19:31:19.904571",
+    "fetch_duration_seconds": 167.1163,
     "total_pages_discovered": 154,
     "pages_fetched_successfully": 155,
     "pages_failed": 0,
@@ -938,7 +938,7 @@
     "total_files": 154,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-06-26T16:57:50.249299",
+  "last_updated": "2026-06-26T19:31:19.904603",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
