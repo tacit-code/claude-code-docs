@@ -436,8 +436,8 @@
     "env-vars.md": {
       "original_url": "https://code.claude.com/docs/en/env-vars",
       "original_md_url": "https://code.claude.com/docs/en/env-vars.md",
-      "hash": "1976aad7cc5332b530dc3efd3e202beb6f16b15ecef7f5dc2c44fc42d0d9fd0f",
-      "last_updated": "2026-06-30T19:44:45.915168"
+      "hash": "43a5624252cfe11b352d90a0d7c92a476dcf0c9de29e23231d98d4365da64eeb",
+      "last_updated": "2026-07-01T07:06:06.538215"
     },
     "errors.md": {
       "original_url": "https://code.claude.com/docs/en/errors",
@@ -790,8 +790,8 @@
     "skills.md": {
       "original_url": "https://code.claude.com/docs/en/skills",
       "original_md_url": "https://code.claude.com/docs/en/skills.md",
-      "hash": "7aaca90961b7e45b0402599a017ee9afcbbf1c1851d1d26cead3f05b2883970e",
-      "last_updated": "2026-06-30T06:51:12.009059"
+      "hash": "100e947d5b77ee7b0510488c9f4d908e351d7c464a0db24958a02ff533b9ff25",
+      "last_updated": "2026-07-01T07:07:01.837203"
     },
     "slack.md": {
       "original_url": "https://code.claude.com/docs/en/slack",
@@ -832,8 +832,8 @@
     "troubleshoot-install.md": {
       "original_url": "https://code.claude.com/docs/en/troubleshoot-install",
       "original_md_url": "https://code.claude.com/docs/en/troubleshoot-install.md",
-      "hash": "ee682a782a42b200bad6359ddb2128fdc5dbb44846f7982d88e251282ffc56ce",
-      "last_updated": "2026-06-30T17:02:52.018163"
+      "hash": "db554c3ad58316192b180227b12e01c18f41b499af37b0cf98a6beb9f3634e2e",
+      "last_updated": "2026-07-01T07:07:07.945320"
     },
     "troubleshooting.md": {
       "original_url": "https://code.claude.com/docs/en/troubleshooting",
@@ -981,8 +981,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-01T02:44:08.762179",
-    "fetch_duration_seconds": 190.785172,
+    "last_fetch_completed": "2026-07-01T07:07:32.589952",
+    "fetch_duration_seconds": 159.442762,
     "total_pages_discovered": 163,
     "pages_fetched_successfully": 164,
     "pages_failed": 0,
@@ -992,7 +992,7 @@
     "total_files": 163,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-07-01T02:44:08.762207",
+  "last_updated": "2026-07-01T07:07:32.589980",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
