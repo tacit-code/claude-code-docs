@@ -15,8 +15,8 @@
     "agent-sdk__agent-loop.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/agent-loop",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/agent-loop.md",
-      "hash": "b117db701d2850ae2fc3696a3571f6feb9c9a7912738f040f9ee0b34da525645",
-      "last_updated": "2026-07-01T19:40:32.271865"
+      "hash": "df3600eca6b6756ee9bc068f5e8225da31aa0d5ae33916a0c2616162358811f8",
+      "last_updated": "2026-07-03T21:58:14.738224"
     },
     "agent-sdk__claude-code-features.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/claude-code-features",
@@ -27,8 +27,8 @@
     "agent-sdk__cost-tracking.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/cost-tracking",
       "original_md_url": "https://code.claude.com/docs/en/agent-sdk/cost-tracking.md",
-      "hash": "2837e8ec4a880a8fa889d85ac0061d63d366fc9f957b365102aa4fc9f89ca39a",
-      "last_updated": "2026-06-15T22:57:46.589659"
+      "hash": "04f4ec62bb2d2f543a139271b0980e63197c1f3933073bdccb6672feedfcb6ab",
+      "last_updated": "2026-07-03T21:58:16.939926"
     },
     "agent-sdk__custom-tools.md": {
       "original_url": "https://code.claude.com/docs/en/agent-sdk/custom-tools",
@@ -981,8 +981,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-03T19:07:03.472519",
-    "fetch_duration_seconds": 175.686474,
+    "last_fetch_completed": "2026-07-03T22:00:41.514052",
+    "fetch_duration_seconds": 152.880457,
     "total_pages_discovered": 163,
     "pages_fetched_successfully": 164,
     "pages_failed": 0,
@@ -992,7 +992,7 @@
     "total_files": 163,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-07-03T19:07:03.472542",
+  "last_updated": "2026-07-03T22:00:41.514080",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
