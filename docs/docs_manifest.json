@@ -880,8 +880,8 @@
     "ultraplan.md": {
       "original_url": "https://code.claude.com/docs/en/ultraplan",
       "original_md_url": "https://code.claude.com/docs/en/ultraplan.md",
-      "hash": "86f52e8cf34071ba765580433b9b570011ab44375e7ce45b4006467cd42b3c33",
-      "last_updated": "2026-07-24T21:59:26.955869"
+      "hash": "691e36836e2a58c240e70a265f84e593a92d275d7ebb4272551a042159e9a3af",
+      "last_updated": "2026-07-28T13:45:21.410550"
     },
     "ultrareview.md": {
       "original_url": "https://code.claude.com/docs/en/ultrareview",
@@ -904,8 +904,8 @@
     "web-quickstart.md": {
       "original_url": "https://code.claude.com/docs/en/web-quickstart",
       "original_md_url": "https://code.claude.com/docs/en/web-quickstart.md",
-      "hash": "830305638102f760ed200ec85f22b99aab24119a470c462ea1ab15b0ed3bfc77",
-      "last_updated": "2026-07-24T21:59:30.972048"
+      "hash": "cbc41fdfaa1e9a1eefaf65d78ae27b06c6b7e24b0b602568bcce27181926980f",
+      "last_updated": "2026-07-28T13:45:25.816078"
     },
     "whats-new.md": {
       "original_url": "https://code.claude.com/docs/en/whats-new",
@@ -1035,8 +1035,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-28T11:15:03.560895",
-    "fetch_duration_seconds": 321.304776,
+    "last_fetch_completed": "2026-07-28T13:45:51.134035",
+    "fetch_duration_seconds": 197.494181,
     "total_pages_discovered": 172,
     "pages_fetched_successfully": 173,
     "pages_failed": 0,
@@ -1046,7 +1046,7 @@
     "total_files": 172,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-07-28T11:15:03.560925",
+  "last_updated": "2026-07-28T13:45:51.134078",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
