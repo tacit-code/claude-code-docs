@@ -382,14 +382,14 @@
     "cloud-environments.md": {
       "original_url": "https://code.claude.com/docs/en/cloud-environments",
       "original_md_url": "https://code.claude.com/docs/en/cloud-environments.md",
-      "hash": "8a249b9094768984a50cd4d13bdac75ddf96bc719ad43f3f2cb02a2b44cb1a7d",
-      "last_updated": "2026-10-10T03:32:48.930194"
+      "hash": "774cc0bf17c6f6f3d6a57d2b660d61c3dcb763fabb8da9063e0cb4caaf332328",
+      "last_updated": "2026-10-14T00:02:21.720751"
     },
     "code-review.md": {
       "original_url": "https://code.claude.com/docs/en/code-review",
       "original_md_url": "https://code.claude.com/docs/en/code-review.md",
-      "hash": "dee0c99cda361d89a25b7e8457aa97094e3d852abbb392db41195539939683cb",
-      "last_updated": "2026-10-10T20:56:04.747846"
+      "hash": "c8bc1fe46d475ad3b585de89661f4ba8c6ca1400923877b4cae4eda4fe8efebe",
+      "last_updated": "2026-10-14T00:02:22.375396"
     },
     "commands.md": {
       "original_url": "https://code.claude.com/docs/en/commands",
@@ -1329,8 +1329,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-13T20:28:33.865854",
-    "fetch_duration_seconds": 134.899349,
+    "last_fetch_completed": "2026-10-14T00:04:06.279477",
+    "fetch_duration_seconds": 148.571405,
     "total_pages_discovered": 221,
     "pages_fetched_successfully": 222,
     "pages_failed": 0,
@@ -1340,7 +1340,7 @@
     "total_files": 221,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-10-13T20:28:33.865888",
+  "last_updated": "2026-10-14T00:04:06.279501",
   "base_url": "https://raw.githubusercontent.com/tacit-code/claude-code-docs/main/docs/",
   "github_repository": "tacit-code/claude-code-docs",
   "github_ref": "main",
